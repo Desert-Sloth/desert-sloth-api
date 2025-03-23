@@ -4,6 +4,10 @@
     <ProjectReference Include="..\desert.sloth.Domain\desert.sloth.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.3" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <RootNamespace>desert_sloth.Data</RootNamespace>
