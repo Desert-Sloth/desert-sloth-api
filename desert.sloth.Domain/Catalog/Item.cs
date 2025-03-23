@@ -9,7 +9,7 @@ namespace desert.sloth.Domain.Catalog
         public string? Description { get; set; }
         public string? Brand { get; set; }
         public decimal Price { get; set; }
-        public List<Rating> Ratings { get; set; } = new List<Rating>();
+        public List<Rating>? Ratings { get; set; } = new List<Rating>();
 
         public void AddRating(Rating rating){
             this.Ratings.Add(rating);
@@ -37,6 +37,7 @@ namespace desert.sloth.Domain.Catalog
             this.Description = description;
             this.Brand = brand;
             this.Price = price;
+            this.Ratings = new List<Rating>();
         }
     }
 }
