@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "desert.sloth.Api", "desert.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "desert.sloth.Domain", "desert.sloth.Domain\desert.sloth.Domain.csproj", "{3057C375-90DE-412C-88A8-3223FA854377}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "desert-sloth.Data", "desert-sloth.Data\desert-sloth.Data.csproj", "{8AAEB4D1-DAA7-4253-93BC-AA126A5249DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{3057C375-90DE-412C-88A8-3223FA854377}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3057C375-90DE-412C-88A8-3223FA854377}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3057C375-90DE-412C-88A8-3223FA854377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AAEB4D1-DAA7-4253-93BC-AA126A5249DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AAEB4D1-DAA7-4253-93BC-AA126A5249DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AAEB4D1-DAA7-4253-93BC-AA126A5249DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AAEB4D1-DAA7-4253-93BC-AA126A5249DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -11,6 +11,7 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
   </ItemGroup>
    <ItemGroup>
-    <ProjectReference Include = "..\desert.sloth.Domain\desert.sloth.Domain.csproj"/>
+    <ProjectReference Include="..\desert.sloth.Domain\desert.sloth.Domain.csproj" />
+    <ProjectReference Include="..\desert-sloth.Data\desert-sloth.Data.csproj" />
   </ItemGroup>
 </Project>
