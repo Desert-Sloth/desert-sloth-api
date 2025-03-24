@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using desert.sloth.Domain.Catalog;
-using desert_sloth.Data;
+using desert.sloth.Data;
 
 namespace desert.sloth.Api.Controllers
 {

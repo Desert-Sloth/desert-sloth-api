@@ -1,4 +1,4 @@
-using desert_sloth.Data;
+using desert.sloth.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
 
