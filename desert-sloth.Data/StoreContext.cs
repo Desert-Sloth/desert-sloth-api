@@ -1,15 +1,18 @@
-﻿using desert.sloth.Domain.Catalog;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using desert.sloth.Domain.Catalog;
 
-namespace desert_sloth.Data
+namespace desert.sloth.Data
 {
     public class StoreContext : DbContext
     {
-         public StoreContext(DbContextOptions<StoreContext> options)
-            : base(options)
-        { }
+        public StoreContext(DbContextOptions<StoreContext> options) : base(options) { }
 
         public DbSet<Item> Items { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            DbInitializer.Initialize(builder);
+        }
     }
 }
-
