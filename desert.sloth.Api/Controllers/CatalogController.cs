@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using desert.sloth.Domain.Catalog;
 using desert.sloth.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace desert.sloth.Api.Controllers
 {
@@ -73,6 +74,7 @@ namespace desert.sloth.Api.Controllers
            return NoContent();
         }
         [HttpDelete("{id:int}")]
+        [Authorize(Policy = "delete:catalog")]
         public IActionResult DeleteItem(int id){
             var item = _db.Items.Find(id);
             if (item == null)

@@ -1,0 +1,11 @@
+
+### GET token from Auth0
+curl --request POST \
+  --url https://dev-o1lva8d26ljkepoo.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '{"client_id":"3yAC09OoJuIoBi2PSSxItvtffcOdJjC5","client_secret":"V8dHvY6iO3Xp4mXg6ZfWPBkxPl1jctwcuOBLxNl8dO9keSyxEwI8Z62ecVZi9RD9","audience":"https://desert-sloth","grant_type":"client_credentials"}'
+
+### DELETE a Item to the Catalog collection
+curl --request DELETE \
+    --url http://localhost:5080/catalog/3 \
+    --header 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjBXcGlmVmlDa3MxQWN3eUhpWGxZSSJ9.eyJpc3MiOiJodHRwczovL2Rldi1vMWx2YThkMjZsamtlcG9vLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiIzeUFDMDlPb0p1SW9CaTJQU1N4SXR2dGZmY09kSmpDNUBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9kZXNlcnQtc2xvdGgiLCJpYXQiOjE3NDQ5ODk3MTgsImV4cCI6MTc0NTA3NjExOCwic2NvcGUiOiJkZWxldGU6Y2F0YWxvZyIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyIsImF6cCI6IjN5QUMwOU9vSnVJb0JpMlBTU3hJdHZ0ZmZjT2RKakM1In0.dKcGJrJEoF2UjyOiag9-wX-azrIyXrWM9bngMxhP7GJhNH3Yvv72Rl8zxWpl7IQnaYnEbNFoKwsHr3MuWCvFSgN-1DLoKGkD0_Pv_A8Och9QugTRucIdY-IYpcQN1ALyirEcpdkp6GTU7BNDELPmtKYEGXG63qcwlSvqKjIav8tW2V4YWROxug2iD9lbTNp6WtmI0uBoECMaFJ_uh9oAHwS9-QFIlzEEmzTZ_zxYeWKs54Iq1M_1IiXXNNqPQscTIuzgmrx4iRlEh68MIOKm2rvDimtr9Rlr63V57IuyR1EH16ON8_oWQVUkvuUFOzerj3YalSDbKSl4xFVReiPLYg'
